@@ -14,13 +14,13 @@ end
 function tick()
 	if InputPressed("z") then
 		savedPlayerTransform = GetPlayerTransform()
-		cpMessage = "CHECKPOINT SAVED\nPress Z to teleport"
+		cpMessage = "CHECKPOINT SAVED\nPress X to teleport"
 		SetValue("visible", 1, "linear", 2)
 		SetValue("visible", 0, "linear", 4)
 	end
 	if InputPressed("x") then
 		SetPlayerTransform(savedPlayerTransform)
-		cpMessage = "CHECKPOINT TELEPORTED\nPress X to save new position"
+		cpMessage = "CHECKPOINT TELEPORTED\nPress Z to save new position"
 		SetValue("visible", 1, "linear", 2)
 		SetValue("visible", 0, "linear", 4)
 	end
